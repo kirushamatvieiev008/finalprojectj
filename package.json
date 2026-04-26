@@ -1,0 +1,21 @@
+{
+  "name": "finalprojectj",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "homepage": "https://github.com/kirushamatvieiev008/finalProject.git",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "vite-plugin-ejs": "^1.7.0"
+  }
+}
