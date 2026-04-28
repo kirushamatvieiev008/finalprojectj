@@ -2,8 +2,19 @@
   "name": "finalprojectj",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
+  "description": "",
   "homepage": "https://github.com/kirushamatvieiev008/finalProject.git",
+  "bugs": {
+    "url": "https://github.com/kirushamatvieiev008/finalprojectj/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirushamatvieiev008/finalprojectj.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,11 +22,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "devDependencies": {
-    "vite": "^8.0.10"
-  },
   "dependencies": {
     "gh-pages": "^6.3.0",
     "vite-plugin-ejs": "^1.7.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.10"
   }
 }
