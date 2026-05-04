@@ -1,18 +1,70 @@
-<header>
-  <div class="container">
-    <!-- <svg class="logosg">
-      <use href="../public/logo.svg"></use>
-    </svg> -->
-    <img class="logosvg" src="../public/logo.svg" alt="#">
-    <h1 class="headline">FIND BEST EVENTS AROUND THE WORLD</h1>
-      <form class="searchform" action="#">
-        <input type="text" name="country" placeholder="Start searching">
-        <select class="options" name="selectCountry" id="#">
-          <option value="#">qwerty</option>
-          <option value="#">qwerty</option>
-          <option value="#">qwerty</option>
-          <option value="#">qwerty</option>
-        </select>
-      </form>
-  </div>
+<header class="header" id="top">
+    <div class="container">
+        <a href="./header.html" class="header__link"><img src="./img/logo.png" alt="" class="header__image"></a>
+        <h1 class="header__title">
+            <b>
+                F<span>IN</span>D
+                <span>BE</span>ST
+                <span>EV</span>EN<span>TS</span>
+                <span>AR</span>OU<span>ND</span>
+                THE
+                <span>WO</span>R<span>LD</span>
+            </b>
+        </h1>
+
+
+        <form action="" class="header__form">
+            <div class="header__icon">
+                <input type="text" class="header__input" placeholder="Start searching">
+                <!-- <img src="./img/searchicon.png" alt="" class="header__icons-start"> -->
+                <svg class="header__icons-start" width="12" height="12">
+                    <use href="./img/searchicons.svg"></use>
+                </svg>
+            </div>
+            <div class="header__icon country">
+                <input type="text" class="header__input" id="countryInput" placeholder="Choose country" readonly />
+                <!-- <img src="./img/polygon.png" class="header__icons" /> -->
+                <svg class="header__icons" width="12" height="12">
+                    <use href="./img/Polygons.svg"></use>
+                </svg>
+                <ul class="country-list"></ul>
+            </div>
+        </form>
+
+    </div>
 </header>
+
+
+
+    <!-- Увійти -->
+
+ <div class="auth-wrapper">
+    <div class="sign-in-button">Sign in</div>
+
+    <div class="auth-container">
+        <button class="login google">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png" alt="Google">
+            <span>Sign in with Google</span>
+        </button>
+        <button class="login guest">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 16.66 14.67 14 12 14Z" fill="currentColor"/>
+            </svg>
+            <span>Continue as Guest</span>
+        </button>
+    </div>
+
+    <div class="user-info">
+        <div class="user-avatar-container">
+            <img class="user-photo" src="" alt="Avatar">
+        </div>
+        <div class="user-display-name"></div>
+        <button class="logout">
+            <span>Sign out</span>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20">
+                <path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.59L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" fill="currentColor"/>
+            </svg>
+        </button>
+    </div>
+
+</div>

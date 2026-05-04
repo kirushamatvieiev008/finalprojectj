@@ -13,12 +13,37 @@
 </head>
 
 <body>
-  <!-- <div id="app"></div> -->
-  <%- include('src/header.html') %>
-    <%- include('src/main.html') %>
-      <%- include('src/footer.html') %>
 
-        <script type="module" src="/src/main.js"></script>
+
+  <div class="preloader">
+    <svg class="progress-ring" width="200" height="200">
+      <circle class="progress-ring__circle" stroke="#DC56C5" stroke-width="10" fill="transparent" r="90" cx="100"
+        cy="100" />
+    </svg>
+    <div class="preloader__logo">
+      <img src="./img/preloader.png" alt="Event Booster">
+    </div>
+  </div>
+
+  <%- include('src/header.html') %>
+    <%- include('src/boosters.html') %>
+      <%- include('src/main.html') %>
+        <%- include('src/footer.html') %>
+
+          <script type="module" src="/src/main.js"></script>
+
+          <load src="partials/header.html" />
+          <load src="partials/booster.html" />
+          <load src="partials/footer.html" />
+          <load src="partials/modal.html" />
+          <load src="partials/team.html" />
+          <script type="module" src="/main.js"></script>
+
+          <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+          <!-- Firebase Auth -->
+          <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </body>
 
 </html>
